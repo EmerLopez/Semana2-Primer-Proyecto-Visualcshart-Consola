@@ -22,35 +22,35 @@ namespace Semana2_Primer_Proyecto_Visualcshart_Consola
             a = Convert.ToInt32(Console.ReadLine());
 
           
-            Console.WriteLine("Type another number, and then press Enter");
-            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Escriba un numero luego presione enter");
+            b = Convert.ToInt32(Console.ReadLine());
 
-            // Ask the user to choose an option.
-            Console.WriteLine("Choose an option from the following list:");
-            Console.WriteLine("\ta - Add");
-            Console.WriteLine("\ts - Subtract");
-            Console.WriteLine("\tm - Multiply");
-            Console.WriteLine("\td - Divide");
-            Console.Write("Your option? ");
+            
+            Console.WriteLine("Elige una opcion de la lista:");
+            Console.WriteLine("\ts - Sumar");
+            Console.WriteLine("\tr - Resta");
+            Console.WriteLine("\tm - Multiplicacion");
+            Console.WriteLine("\td - Division");
+            Console.Write("Su opcion? ");
 
             // Use a switch statement to do the math.
             switch (Console.ReadLine())
             {
-                case "a":
-                    Console.WriteLine($"Your result: {num1} + {num2} = " + (num1 + num2));
-                    break;
                 case "s":
-                    Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                    Console.WriteLine($"El resultado es: {a} + {b} = " + (a + b));
+                    break;
+                case "r":
+                    Console.WriteLine($"El resultado es:{a} - {b} = " + (a - b));
                     break;
                 case "m":
-                    Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                    Console.WriteLine($"El resultado es: {a} * {b} = " + (a * b));
                     break;
                 case "d":
-                    Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
+                    Console.WriteLine($"El resultado es: {a} / {b} = " + (a / b));
                     break;
             }
-            // Wait for the user to respond before closing.
-            Console.Write("Press any key to close the Calculator console app...");
+            
+            Console.Write("Presione cualquier tecla para cerrar la aplicación de la consola Calculadora...");
             Console.ReadKey();
         }
     }
