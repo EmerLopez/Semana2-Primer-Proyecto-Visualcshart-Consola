@@ -33,7 +33,7 @@ namespace Semana2_Primer_Proyecto_Visualcshart_Consola
             Console.WriteLine("\td - Division");
             Console.Write("Su opcion? ");
 
-            // Use a switch statement to do the math.
+        
             switch (Console.ReadLine())
             {
                 case "s":
